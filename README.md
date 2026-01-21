@@ -5,14 +5,10 @@ Un framework para definir, gestionar y desplegar reglas de detección alineadas 
 ## Tabla de contenidos
 - [Resumen](#resumen)
 - [Características principales](#características-principales)
-- [Cómo funciona](#cómo-funciona)
 - [Formato de las reglas](#formato-de-las-reglas)
 - [Quickstart](#quickstart)
 - [Ejemplo de regla](#ejemplo-de-regla)
 - [Mapeo MITRE ATT&CK](#mapeo-mitre-attack)
-- [Testing y CI](#testing-y-ci)
-- [Contribuir](#contribuir)
-- [Licencia y contacto](#licencia-y-contacto)
 
 ## Resumen
 El Mitre & Detections Rules Framework proporciona una estructura común para describir reglas de detección, metadata asociada (severidad, plataformas, referencias), y su mapeo a MITRE ATT&CK. Permite validar reglas, ejecutar pruebas unitarias y convertir/exportar reglas a múltiples formatos de destino.
@@ -24,14 +20,6 @@ El Mitre & Detections Rules Framework proporciona una estructura común para des
 - Generadores/convertidores para exportar a SIEMs/EDRs comunes.
 - Plantillas y ejemplos para acelerar la creación de reglas.
 - Control de versiones y trazabilidad de cambios por regla.
-
-## Cómo funciona
-1. Escribir reglas en el formato canónico del repositorio (YAML/JSON).
-2. Añadir metadata obligatoria: id, nombre, descripción, severidad, plataformas, y mapeo MITRE.
-3. Ejecutar validadores para comprobar sintaxis y consistencia.
-4. Ejecutar pruebas que simulan eventos/telemetría para verificar comportamiento.
-5. Exportar reglas a los formatos soportados por tu stack (p. ej., reglas Sigma, detecciones para EDR X).
-6. Desplegar en pipelines CI/CD para aplicación automática.
 
 ## Formato de las reglas
 Cada regla debe incluir campos mínimos:
