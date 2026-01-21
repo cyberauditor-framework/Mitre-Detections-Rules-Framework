@@ -102,34 +102,6 @@ Este framework exige que cada regla incluya un mapeo MITRE mínimo (táctica y t
 - Generar matrices ATT&CK con cobertura de detección.
 - Facilitar reportes de brechas y evolución de la cobertura.
 
-Se recomienda mantener una carpeta con archivos de mapeo y scripts que generen métricas de cobertura.
 
-## Testing y CI
-- Validadores unitarios verifican la sintaxis y la coherencia de la metadata.
-- Tests de detección emplean datasets sintéticos o replay de telemetría para verificar que la regla se dispara cuando corresponde.
-- Integración en CI: cada PR ejecuta validación y tests; las reglas que fallan no se permiten fusionar.
-- Exports automáticos en pipelines permiten publicar artefactos para despliegue.
 
-## Contribuir
-1. Abre un issue para proponer nuevas reglas o cambios en el formato.
-2. Crea una rama para tu contribución.
-3. Incluye tests que demuestren la efectividad de la regla.
-4. Sigue las convenciones de commit y el template de PR del repositorio.
 
-Para detalles sobre el formato y validaciones, revisa los documentos en la carpeta `docs/` (si aplica) o contacta al equipo responsable.
-
-## Buenas prácticas al crear reglas
-- Favor la especificidad sobre reglas demasiado genéricas.
-- Añade ejemplos y contraejemplos en los tests.
-- Incluye referencias y razonamiento para la lógica de la detección.
-- Mapea siempre la regla a MITRE (táctica y técnica) para facilitar priorización.
-
-## Licencia y contacto
-Este proyecto está bajo la licencia [MIT](LICENSE) (ajusta si corresponde).  
-Para preguntas o soporte: contacta a los mantenedores en el repositorio o abre un issue.
-
----
-Si quieres, puedo:
-- Añadir comandos específicos según los scripts del repositorio.
-- Generar plantillas de reglas en YAML o JSON.
-- Crear un ejemplo de pipeline CI para validación y exportación automática.
